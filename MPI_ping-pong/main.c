@@ -4,6 +4,9 @@
 
 const int MAX_STRING = 100;
 
+//mpicc main.c
+//mpiexec -n 2 ./a.out
+
 int main(void)
 {
 	int number;
