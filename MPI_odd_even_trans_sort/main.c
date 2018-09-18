@@ -89,7 +89,6 @@ void merge_high(int local_keys[], int recv_keys[], int local_n)
     {
         if (local_keys[m_i] >= recv_keys[r_i])
         {
-            //printf("%d", local_keys[m_i]);
             temp_keys[t_i] = local_keys[m_i];
             --t_i; --m_i;
         }
@@ -102,9 +101,7 @@ void merge_high(int local_keys[], int recv_keys[], int local_n)
 
     for (m_i = 0; m_i < local_n; ++m_i)
     {
-        //printf("%d", temp_keys[m_i]);
         local_keys[m_i] = temp_keys[m_i];
-        //printf("%d", local_keys[m_i]);
     }
 }
 
