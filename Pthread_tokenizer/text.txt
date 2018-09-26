@@ -1,0 +1,9 @@
+apple plane text
+red green blue
+alonso marco    gabriel
+dog chicken frog    elephant    turtle    
+           sea beach jungle
+car           plane     ship
+earth     moon
+school hospital church
+              ANN    KNN KD-tree
