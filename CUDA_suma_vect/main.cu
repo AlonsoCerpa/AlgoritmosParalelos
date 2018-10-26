@@ -35,7 +35,7 @@ void vecAdd(float* h_A, float* h_B, float* h_C, int n)
 
 int main(void)
 {
-    int n = 100;
+    int n = 10000;
     float* h_A = new float[n];
     float* h_B = new float[n];
     float* h_C = new float[n];
@@ -47,12 +47,12 @@ int main(void)
     }
 
     vecAdd(h_A, h_B, h_C, n);
-
+/*
     for (int i = 0; i < n; ++i)
     {
         std::cout << h_C[i] << " ";
     }
-    std::cout << "\n";
+    std::cout << "\n";*/
 
     delete[] h_A;
     delete[] h_B;
