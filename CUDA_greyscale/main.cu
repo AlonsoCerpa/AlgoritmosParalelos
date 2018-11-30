@@ -34,7 +34,6 @@ void colorToGreyscaleConversion(unsigned char* h_BGR, unsigned char* h_greyScale
 
     cudaMalloc((void **) &d_greyScale, size);
 
-
     dim3 dimGrid(ceil(width/16.0), ceil(height/16.0), 1);
     dim3 dimBlock(16, 16, 1);
     colorToGreyscaleConversionKernel<<<dimGrid, dimBlock>>>(d_greyScale, d_BGR, width, height);

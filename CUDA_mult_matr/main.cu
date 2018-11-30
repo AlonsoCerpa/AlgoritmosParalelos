@@ -16,10 +16,6 @@ __global__ void MatrixMulKernel(float* M, float* N, float* P, int Width)
     }
 }
 
-
-
-
-
 int main()
 {
     const int w = 2;
@@ -36,7 +32,6 @@ int main()
 
     cudaMemcpy(d_M, M, sizeMat, cudaMemcpyHostToDevice);
     cudaMemcpy(d_N, N, sizeMat, cudaMemcpyHostToDevice);
-    cudaMemcpy(d_P, P, sizeMat, cudaMemcpyHostToDevice);
 
     dim3 dimBlock(w, w, 1);
     MatrixMulKernel<<<1, dimBlock>>>(d_M, d_N, d_P, w);

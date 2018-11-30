@@ -10,12 +10,6 @@ int main()
     std::string name_file = "d198.tsp";
     read_tsp_file(nodes, name_file);   
 
-    /*
-    for (int i = 0; i < nodes.size(); ++i)
-    {
-        std::cout << "Node " << i << ": x = " << nodes[i].x << ", y = " << nodes[i].y << "\n";
-    }*/
-
     int num_iter = 1;
     int num_ants = 2;
     float beta = 1.0;

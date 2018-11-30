@@ -51,7 +51,6 @@ int main()
 
     cudaMemcpy(d_M, M, sizeMat, cudaMemcpyHostToDevice);
     cudaMemcpy(d_N, N, sizeMat, cudaMemcpyHostToDevice);
-    cudaMemcpy(d_P, P, sizeMat, cudaMemcpyHostToDevice);
 
     dim3 dimGrid(2, 2, 1);
     dim3 dimBlock(2, 2, 1);
